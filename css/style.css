@@ -1923,8 +1923,12 @@ ul, ol {
 	.hp-room-items .hp-room-item .hr-text {
 		bottom: -200px;
 	}
-	.logo{
-		max-width: 100%;
+	.nav-menu{
+		margin-top: 15px;
+	}
+	.menu-item .logo{
+		max-width: 75%;
+		padding: 1px 0;
 	}
 }
 @media only screen and (min-width: 1200px) and (max-width: 1250px) {
