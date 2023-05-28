@@ -1935,17 +1935,18 @@ ul, ol {
 	.hp-room-items .hp-room-item .hr-text {
 		bottom: -288px;
 	}
-	.logo{
-		max-width: 100%;
-	}
+
 }
 @media only screen and (min-width: 1200px) {
 	.container {
 		max-width: 1170px;
 	}
 	.logo{
-	max-width: 50%;
+	max-width: 70%;
 }
+	.menu-item.logo{
+
+	} 
 
 }
 /* Medium Device: 1200px */
@@ -1964,7 +1965,7 @@ ul, ol {
 		bottom: 80px;
 	}
 	.logo{
-		max-width: 50%;
+		max-width: 70%;
 	}
 }
 @media only screen and (max-width: 991px) {
@@ -1993,7 +1994,7 @@ ul, ol {
 	.canvas-open {
 		position: absolute;
 		right: 40px;
-		top: 25px;
+		top: 5px;
 		font-size: 22px;
 		width: 30px;
 		height: 30px;
@@ -2226,8 +2227,9 @@ ul, ol {
 	.logo{
 		max-width: 10%;
 	}
+	
 }
-/* Tablet Device: 768px */
+/* 768px */
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
 	.testimonial-slider.owl-carousel .owl-nav button {
@@ -2243,10 +2245,14 @@ ul, ol {
 		margin-bottom: 15px;
 	}
 	.logo{
-		max-width: 10%;
+		max-width: 20%;
+	}
+	.canvas-open{
+		margin-top: 35px;
+		margin-right: 25px;
 	}
 }
-/* Large Mobile: 480px */
+/* 480px */
 
 @media only screen and (max-width: 767px) {
 	.testimonial-slider.owl-carousel .owl-nav {
@@ -2284,7 +2290,12 @@ ul, ol {
 		margin-bottom: 10px;
 	}
 	.logo{
-		max-width: 15%;
+		max-width: 25%;
+	}
+	.canvas-open{
+		margin-top: 30px;
+		margin-right: 25px;
+
 	}
 }
 /* Small Mobile: 320px */
@@ -2294,7 +2305,12 @@ ul, ol {
 		margin-bottom: 5px;
 	}
 	.logo{
-		max-width: 10%;
+		max-width: 25%;
+	}
+	.canvas-open{
+		margin-top: 20px;
+		margin-right: 20px;
+
 	}
 	.video-section {
 		padding-top: 80px;
