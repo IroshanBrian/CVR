@@ -2298,11 +2298,14 @@ ul, ol {
 
 	}
 }
-/* Small Mobile: 320px */
+/* 320px */
 
 @media only screen and (max-width: 479px) {
 	.footer-section .copyright-option ul li {
 		margin-bottom: 5px;
+	}
+	.menu-item .logo{
+		height: 1;
 	}
 	.logo{
 		max-width: 30%;
