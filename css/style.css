@@ -1,3 +1,9 @@
+*{
+	border: 1px solid red;
+}
+
+
+
 html, body {
 	height: 100%;
 	font-family: "Cabin", sans-serif;
@@ -2345,6 +2351,21 @@ ul, ol {
 	
 	.footer-section .copyright-option ul li {
 		margin-bottom: 5px;
+	}
+	.hero-slider .owl-stage-outer, .hero-slider .owl-stage, .hero-slider .owl-item, .hero-slider .hs-item {
+		height: 75%;
+	}
+	.hero-text h1 {
+		line-height: 50px;
+		margin-top: -58px;
+		margin-bottom: 28px;
+	}
+	.hero-text p {
+		font-size: 18px;
+		color: #ffffff;
+		margin-top: -7px;
+		line-height: 30px;
+		margin-bottom: 10px;
 	}
 	.menu-item .logo{
 		height: 1;
