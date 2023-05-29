@@ -90,6 +90,36 @@ ul, ol {
 .text-white h1, .text-white h2, .text-white h3, .text-white h4, .text-white h5, .text-white h6, .text-white p, .text-white span, .text-white li, .text-white a {
 	color: #fff;
 }
+
+  
+  .slider{
+	width: 800px;
+	height: 500px;
+	border-radius: 10px;
+	overflow: hidden;
+  }
+  
+  .slides{
+	width: 500%;
+	height: 500px;
+	display: flex;
+  }
+  
+  .slides input{
+	display: none;
+  }
+  
+  .slide{
+	width: 20%;
+	transition: 2s;
+  }
+  
+  .slide img{
+	width: 800px;
+	height: 500px;
+  }
+
+
 /* buttons */
 
 .primary-btn {
@@ -594,7 +624,7 @@ ul, ol {
 .hero-slider.owl-carousel .owl-dots button {
 	height: 6px;
 	width: 6px;
-	background: #000000;
+	background: #fffefe;
 	opacity: 0.5;
 	border-radius: 50%;
 	margin-right: 10px;
@@ -2240,6 +2270,9 @@ ul, ol {
 /* 768px */
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
+	.virtical{
+
+	}
 	.testimonial-slider.owl-carousel .owl-nav button {
 		left: -30px;
 	}
@@ -2309,6 +2342,7 @@ ul, ol {
 /* 320px */
 
 @media only screen and (max-width: 479px) {
+	
 	.footer-section .copyright-option ul li {
 		margin-bottom: 5px;
 	}
@@ -2357,5 +2391,6 @@ ul, ol {
 	.blog-details-text .comment-option .single-comment-item .sc-text a {
 		margin-bottom: 10px;
 	}
+
 
 }
