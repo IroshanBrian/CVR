@@ -36,6 +36,7 @@ p {
 	line-height: 26px;
 	margin: 0 0 15px 0;
 }
+
 img {
 	max-width: 100%;
 }
@@ -579,6 +580,7 @@ ul, ol {
 	height: 100%;
 	left: 0;
 	top: 0;
+	
 }
 .hero-slider.owl-carousel .owl-dots {
 	position: absolute;
@@ -586,28 +588,33 @@ ul, ol {
 	bottom: 23px;
 	width: 100%;
 	text-align: center;
+	
 }
 .hero-slider.owl-carousel .owl-dots button {
 	height: 6px;
 	width: 6px;
-	background: #ffffff;
+	background: #000000;
 	opacity: 0.5;
 	border-radius: 50%;
 	margin-right: 10px;
 	-webkit-transition: all 0.3s;
 	-o-transition: all 0.3s;
 	transition: all 0.3s;
+	
 }
 .hero-slider.owl-carousel .owl-dots button.active {
 	width: 30px;
 	border-radius: 50px;
 	opacity: 1;
+	
 }
 .hero-slider.owl-carousel .owl-dots button:last-child {
 	margin-right: 0;
+	
 }
 .hero-slider .owl-stage-outer, .hero-slider .owl-stage, .hero-slider .owl-item, .hero-slider .hs-item {
 	height: 100%;
+	
 }
 /*---------------------
   About US
