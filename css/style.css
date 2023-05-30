@@ -63,6 +63,13 @@ ul, ol {
 	text-align: center;
 	margin-bottom: 22px;
 }
+.section-title-aboutus span {
+	font-size: 14px;
+	color: #dfa974;
+	font-weight: 700;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+}
 .section-title span {
 	font-size: 14px;
 	color: #dfa974;
@@ -521,13 +528,15 @@ ul, ol {
 	margin-bottom: 10px;
 }
 .booking-form {
-	background: #ffffff;
-	padding: 44px 40px 50px 40px;
-	border-radius: 4px;
+    background: #ffffff;
+    padding: 6px 40px 50px 40px;
+    border-radius: 37px;
 }
 .booking-form h3 {
 	color: #19191a;
 	margin-bottom: 36px;
+	text-align: center;
+	margin-top: 12px;
 }
 .booking-form form .check-date {
 	position: relative;
@@ -2354,9 +2363,42 @@ ul, ol {
 	.booking-form {
 		margin-top: 50px;
 	}
+	.section-title-aboutus{
+		text-align: center;
+		margin-top: 1px;
+		margin-bottom: 22px;
+	}
+	.about-text {
+		margin-bottom: 30px;
+		margin-top: -75px;
+	}
+	.testimonial-section .section-title {
+		margin-bottom: 70px;
+	}
+	.section-title {
+		text-align: center;
+		margin-top: 59px;
+		margin-bottom: 22px;
+	}
+	.services-section .section-title {
+		margin-bottom: -15px;
+		margin-top: 54px;
+	}
+	.about-text p.f-para {
+		margin-bottom: 1px;
+		margin-top: -10px;
+	}
+	.booking-form {
+		background: rgb(255, 255, 255);
+		padding: 6px 40px 50px;
+		border-radius: 37px;
+	}
+	.spad {
+    padding-top: 0px;
+    padding-bottom: 0px;
+	}
 	.hero-text h1 {
 		text-shadow: rgb(0, 0, 0) 1px 0 100px;
-		text-align: center;
 		line-height: 50px;
 		margin-top: -9px;
 		margin-bottom: 28px;
@@ -2364,20 +2406,11 @@ ul, ol {
 	.hero-text p {
 		text-shadow: rgb(0, 0, 0) 1px 0 100px;
 		text-shadow: #000 ;
-		text-align: center;
 		font-size: 18px;
 		color: #ffffff;
 		margin-top: -7px;
 		line-height: 30px;
 		margin-bottom: 10px;
-	}
-	.primary-btn {
-		margin: 0;
-		position: absolute;
-		left: 35%;
-		top: 95%;
-		-ms-transform: translateY(-50%);
-		transform: translateY(-50%);
 	}
 	.menu-item .logo{
 		height: 1;
