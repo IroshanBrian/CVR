@@ -172,20 +172,21 @@
 
             .form-box {
                 position: relative;
-                width: 559px;
-                height: 455px;
-                background-color: rgb(0, 0, 0);
+                width: 500px;
+                height: 400px;
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                border-radius: 74px;
-
+                border-radius: 50px;
+                border: 2px solid white;
             }
 
             h1 {
                 color: rgb(255, 255, 255);
-                font-size: em;
+                font-size: 2em;
                 text-align: center;
+                text-shadow: 0 0 20px rgba(255, 217, 0, 0.6);
+                font-style: italic;
             }
 
             .inputbox {
@@ -267,22 +268,18 @@
                 
             }
 
-            .reg {
-                color: white;
-                background-color: rgba(104, 85, 224, 1);
-            }
 
             .log {
-                color: rgb(104, 85, 224);
-                background-color: rgba(255, 255, 255, 1);
-                border: 1px solid rgba(104, 85, 224, 1);
+                color: rgb(0, 0, 0);
+                background-color: rgb(238, 255, 0);
+                border: 1px solid rgba(0, 184, 9, 0.788);
             }
 
             button:hover {
                 color: white;
                 width: ;
-                box-shadow: 0 0 20px rgba(104, 85, 224, 0.6);
-                background-color: rgba(104, 85, 224, 1);
+                box-shadow: 0 0 20px rgba(255, 0, 0, 0.6);
+                background-color: rgb(255, 0, 0);
             }
             .log{
                 text-align: center;
@@ -295,21 +292,23 @@
             }
             .bg-img{
                 background-image: url(./img/hero/hero-1.webp);
-                max-width: 100%;
-                height: auto;
+                width: 100%;
+                height: 100%;
             }
-        </style>
-        
-        
+            label{
+                opacity: 75%;
+            }
 
-        
-        <body class="bg-img">
-            <section>   
+
+
+        </style>
+        <body>
+            <section class="bg-img">   
                 <div>
                 <div class="form-box">
                     <div class="form-value">
                         <form action="login.php" method="get">
-                            <h1 class="loginh2">Login</h1>
+                            <h1 class="loginh2">ADMIN LOGIN</h1>
                         <div class="empw">
                             <div class="inputbox">
                                 <ion-icon name="mail-outline"></ion-icon>
@@ -325,9 +324,11 @@
                                 <button class="log">Login</button>   
                             </div>
                         </form>
+                        <div class="form-box1"></div>
                     </div>
                 
-            </section>
+            </section>  
+            </body>
         </body>
     </body>
 
