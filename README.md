@@ -1,2 +1,1 @@
-# CVR
-Ceylon Voyager's Retreat
+# Ceylon Voyager's Retreat
