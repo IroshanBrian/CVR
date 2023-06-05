@@ -10,7 +10,6 @@
     <!-- Google Font -->
     <link href="https://fonts.googleapis.com/css?family=Lora:400,700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Cabin:400,500,600,700&display=swap" rel="stylesheet">
-    
 
     <!-- Css Styles -->
     <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
@@ -135,297 +134,293 @@
             </div>
         </div>
     </header>
+
+    <!-- Header End -->
     <style>
-    
-
-.container{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-flow: column;
-
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+body{
+  background: #ffffff;
+  padding: 0 10px;
+}
+.wrapper{
+  max-width: 500px;
+  width: 100%;
+  background: #ffffff;
+  margin: 20px auto;
+  box-shadow: 1px 1px 2px rgba(0,0,0,0.125);
+  padding: 30px;
+  border: 2px solid black;
+  padding: 6px 40px 50px;
+  border-radius: 37px;
 }
 
-.container form{
-    background: #fff;
-    border-radius: 5px;
-    box-shadow: 0 10px 15px rgba(0,0,0,.1);
-    padding: 20px;
-    width: 600px;
-    padding-top: 160px;
+.wrapper .title{
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 25px;
+  color: #000000;
+  text-transform: uppercase;
+  text-align: center;
 }
 
-.container form .inputBox{
-    margin-top: 20px;
+.wrapper .form{
+  width: 100%;
 }
 
-.container form .inputBox span{
-    display: block;
-    color:#999;
-    padding-bottom: 5px;
+.wrapper .form .inputfield{
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
 }
 
-.container form .inputBox input,
-.container form .inputBox select{
-    width: 100%;
-    padding: 10px;
-    border-radius: 10px;
-    border:1px solid rgba(0,0,0,.3);
-    color:#444;
+.wrapper .form .inputfield label{
+   width: 200px;
+   color: #757575;
+   margin-right: 10px;
+  font-size: 14px;
 }
 
-.container form .flexbox{
-    display: flex;
-    gap:15px;
+.wrapper .form .inputfield .input,
+.wrapper .form .inputfield .textarea{
+  width: 100%;
+  outline: none;
+  border: 1px solid #0f0f0f;
+  font-size: 15px;
+  padding: 8px 10px;
+  border-radius: 3px;
+  transition: all 0.3s ease;
+  border-radius: 37px;
 }
 
-.container form .flexbox .inputBox{
-    flex:1 1 150px;
+.wrapper .form .inputfield .textarea{
+  width: 100%;
+  height: 125px;
+  resize: none;
 }
 
-.container form .submit-btn{
-    width: 100%;
-    background:linear-gradient(45deg, blueviolet, deeppink);
-    margin-top: 20px;
-    padding: 10px;
-    font-size: 20px;
-    color:#fff;
-    border-radius: 10px;
-    cursor: pointer;
-    transition: .2s linear;
+.wrapper .form .inputfield .custom_select{
+  position: relative;
+  width: 100%;
+  height: 37px;
 }
 
-.container form .submit-btn:hover{
-    letter-spacing: 2px;
-    opacity: .8;
+.wrapper .form .inputfield .custom_select:before{
+  content: "";
+  position: absolute;
+  top: 12px;
+  right: 10px;
+  border: 8px solid;
+  border-color: #d5dbd9 transparent transparent transparent;
+  pointer-events: none;
 }
 
-.container .card-container{
-    margin-bottom: -150px;
-    position: relative;
-    height: 250px;
-    width: 400px;
+.wrapper .form .inputfield .custom_select select{
+  -webkit-appearance: none;
+  -moz-appearance:   none;
+  appearance:        none;
+  outline: none;
+  width: 100%;
+  height: 100%;
+  border: 0px;
+  padding: 8px 10px;
+  font-size: 15px;
+  border: 1px solid #d5dbd9;
+  border-radius: 3px;
 }
 
-.container .card-container .front{
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    top: 0; left: 0;
-    background:linear-gradient(45deg, blueviolet, deeppink);
-    border-radius: 5px;
-    backface-visibility: hidden;
-    box-shadow: 0 15px 25px rgba(0,0,0,.2);
-    padding:20px;
-    transform:perspective(1000px) rotateY(0deg);
-    transition:transform .4s ease-out;
+.wrapper .form .inputfield .input:focus,
+.wrapper .form .inputfield .textarea:focus,
+.wrapper .form .inputfield .custom_select select:focus{
+  border: 1px solid #fec107;
 }
 
-.container .card-container .front .image{
-    display: flex;
-    align-items:center;
-    justify-content: space-between;
-    padding-top: 10px;
+.wrapper .form .inputfield p{
+   font-size: 14px;
+   color: #757575;
+}
+.wrapper .form .inputfield .check{
+  width: 15px;
+  height: 15px;
+  position: relative;
+  display: block;
+  cursor: pointer;
+}
+.wrapper .form .inputfield .check input[type="checkbox"]{
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+}
+.wrapper .form .inputfield .check .checkmark{
+  width: 15px;
+  height: 15px;
+  border: 1px solid #ffffff;
+  display: block;
+  position: relative;
+}
+.wrapper .form .inputfield .check .checkmark:before{
+  content: "";
+  position: absolute;
+  top: 1px;
+  left: 2px;
+  width: 5px;
+  height: 2px;
+  border: 2px solid;
+  border-color: transparent transparent #fff #fff;
+  transform: rotate(-45deg);
+  display: none;
+}
+.wrapper .form .inputfield .check input[type="checkbox"]:checked ~ .checkmark{
+  background: #ffffff;
 }
 
-.container .card-container .front .image img{
-    height: 50px;
+.wrapper .form .inputfield .check input[type="checkbox"]:checked ~ .checkmark:before{
+  display: block;
 }
 
-.container .card-container .front .card-number-box{
-    padding:30px 0;
-    font-size: 22px;
-    color:#fff;
+.wrapper .form .inputfield .btn{
+  width: 100%;
+   padding: 8px 10px;
+  font-size: 15px; 
+  border: 0px;
+  background:  #ffffff;
+  color: #000000;
+  cursor: pointer;
+  border-radius: 3px;
+  outline: none;
+  border: 1px solid black;
+  
 }
 
-.container .card-container .front .flexbox{
-    display: flex;
+.wrapper .form .inputfield .btn:hover{
+  background: #ffee00;
 }
 
-.container .card-container .front .flexbox .box:nth-child(1){
-    margin-right: auto;
+
+.wrapper .form .inputfield:last-child{
+  margin-bottom: 0;
+}
+.para{
+    text-align: center;
 }
 
-.container .card-container .front .flexbox .box{
-    font-size: 15px;
-    color:#fff;
-}
-
-.container .card-container .back{
-    position: absolute;
-    top:0; left: 0;
-    height: 100%;
-    width: 100%;
-    background:linear-gradient(45deg, blueviolet, deeppink);
-    border-radius: 5px;
-    padding: 20px 0;
-    text-align: right;
-    backface-visibility: hidden;
-    box-shadow: 0 15px 25px rgba(0,0,0,.2);
-    transform:perspective(1000px) rotateY(180deg);
-    transition:transform .4s ease-out;
-}
-
-.container .card-container .back .stripe{
-    background: #000;
-    width: 100%;
-    margin: 10px 0;
-    height: 50px;
-}
-
-.container .card-container .back .box{
-    padding: 0 20px;
-}
-
-.container .card-container .back .box span{
-    color:#fff;
-    font-size: 15px;
-}
-
-.container .card-container .back .box .cvv-box{
-    height: 50px;
-    padding: 10px;
-    margin-top: 5px;
-    color:#333;
-    background: #fff;
-    border-radius: 5px;
-    width: 100%;
-}
-
-.container .card-container .back .box img{
-    margin-top: 30px;
-    height: 30px;
-}
 @media (max-width:420px) {
-
+  .wrapper .form .inputfield{
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .wrapper .form .inputfield label{
+    margin-bottom: 5px;
+  }
+  .wrapper .form .inputfield.terms{
+    flex-direction: row;
+  }
 }
 
     </style>
-    <div class="container">
 
-      <div class="card-container">
-  
-          <div class="front">
-              <div class="image">
-                  <img src="img/checkout/chip.png" alt="">
-                  <img src="img/checkout/visa.png" alt="">
-              </div>
-              <div class="card-number-box">################</div>
-              <div class="flexbox">
-                  <div class="box">
-                      <span>Card Holder</span>
-                      <div class="card-holder-name">Full Name</div>
-                  </div>
-                  <div class="box">
-                      <span>Expires</span>
-                      <div class="expiration">
-                          <span class="exp-month">MM</span>
-                          <span class="exp-year">YY</span>
-                      </div>
-                  </div>
-              </div>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+<div class="wrapper">
+
+    <div class="title">
+        BOOKINGS
+    </div>
+    <div class="form">
+       <div class="inputfield">
+          <label>First Name</label>
+          <input type="text" class="input" required>
+       </div>  
+        <div class="inputfield">
+          <label>Last Name</label>
+          <input type="text" class="input"required>
+       </div>  
+       <div class="inputfield">
+          <label>Phone Number</label>
+          <input type="text" class="input"required>
+       </div>  
+      <div class="inputfield">
+          <label>Email</label>
+          <input type="email" class="input"required>
+       </div> 
+        <div class="inputfield">
+          <label>Rooms</label>
+          <div class="custom_select">
+            <select>
+              <option value="">Select</option>
+              <option value="">Room 1 (2 Adults)</option>
+              <option value="">Room 2 (2 Adults)</option>
+              <option value="">Room 3 (2 Adults)</option>
+              <option value="">Room 4 (2 Adults)</option>
+              <option value="">Room 5 (2 Adults)</option>
+            </select>
           </div>
-  
-          <div class="back">
-              <div class="stripe"></div>
-              <div class="box">
-                  <span>CVV</span>
-                  <div class="cvv-box"></div>
-                  <img src="./img/checkout/visa.png" alt="">
-              </div>
+        </div>
+        <div class="inputfield">
+            <label>Custom Package</label>
+            <div class="custom_select">
+              <select>
+                <option value="">Select</option>
+                <option value="">Pickup and drop</option>
+                <option value="">Cycling</option>
+                <option value="">Package 3</option>
+                <option value="">Package 4</option>
+                <option value="">Package 5</option>
+              </select>
+            </div>
           </div>
-  
+          <div class="inputfield">
+            <label>Check In</label>
+            <input type="date">
+          </div>
+          <div class="inputfield">
+            <label>Check out</label>
+            <input type="date">
+          </div>
+
+
+        <!--<div class="inputfield">
+          <label>Email Address</label>
+          <input type="text" class="input">
+       </div> 
+      <div class="inputfield">
+          <label>Phone Number</label>
+          <input type="text" class="input">
+       </div> 
+      <div class="inputfield">
+          <label>Leave us a note</label>
+          <textarea class="textarea"></textarea>
+       </div> 
+      <div class="inputfield">
+          <label>Postal Code</label>
+          <input type="text" class="input">
+       </div>--> 
+      <div class="inputfield terms">
+          </label>
+          <p class="para">IF YOU WANT TO CANCEL YOUR BOOKING YOU HAVE TO EITHER GIVE US A CALL +(94) 77 752 1857 <br>
+            OR SEND AN EMAIL inquiry@ceylonvoyagersretreat.com</p>
+       </div> 
+      <div class="inputfield">
+        <a href="./checkout.html" class="btn">Submit
+      </a>
       </div>
-  
-      <form action="">
-          <div class="inputBox">
-              <span>Card Number</span>
-              <input type="text" maxlength="16" class="card-number-input">
-          </div>
-          <div class="inputBox">
-              <span>Card Holder</span>
-              <input type="text" class="card-holder-input">
-          </div>
-          <div class="flexbox">
-              <div class="inputBox">
-                  <span>Expiration MM</span>
-                  <select name="" id="" class="month-input">
-                      <option value="month" selected disabled>Month</option>
-                      <option value="01">01</option>
-                      <option value="02">02</option>
-                      <option value="03">03</option>
-                      <option value="04">04</option>
-                      <option value="05">05</option>
-                      <option value="06">06</option>
-                      <option value="07">07</option>
-                      <option value="08">08</option>
-                      <option value="09">09</option>
-                      <option value="10">10</option>
-                      <option value="11">11</option>
-                      <option value="12">12</option>
-                  </select>
-              </div>
-              <div class="inputBox">
-                  <span>Expiration YY</span>
-                  <select name="" id="" class="year-input">
-                      <option value="year" selected disabled>Year</option>
-                      <option value="2021">2021</option>
-                      <option value="2022">2022</option>
-                      <option value="2023">2023</option>
-                      <option value="2024">2024</option>
-                      <option value="2025">2025</option>
-                      <option value="2026">2026</option>
-                      <option value="2027">2027</option>
-                      <option value="2028">2028</option>
-                      <option value="2029">2029</option>
-                      <option value="2030">2030</option>
-                  </select>
-              </div>
-              <div class="inputBox">
-                  <span>CVV</span>
-                  <input type="text" maxlength="4" class="cvv-input">
-              </div>
-          </div>
-          <input type="submit" value="Submit" class="submit-btn">
-      </form>
-  
-  </div>    
-      
-  
-  
-  <script>
-  
-  document.querySelector('.card-number-input').oninput = () =>{
-      document.querySelector('.card-number-box').innerText = document.querySelector('.card-number-input').value;
-  }
-  
-  document.querySelector('.card-holder-input').oninput = () =>{
-      document.querySelector('.card-holder-name').innerText = document.querySelector('.card-holder-input').value;
-  }
-  
-  document.querySelector('.month-input').oninput = () =>{
-      document.querySelector('.exp-month').innerText = document.querySelector('.month-input').value;
-  }
-  
-  document.querySelector('.year-input').oninput = () =>{
-      document.querySelector('.exp-year').innerText = document.querySelector('.year-input').value;
-  }
-  
-  document.querySelector('.cvv-input').onmouseenter = () =>{
-      document.querySelector('.front').style.transform = 'perspective(1000px) rotateY(-180deg)';
-      document.querySelector('.back').style.transform = 'perspective(1000px) rotateY(0deg)';
-  }
-  
-  document.querySelector('.cvv-input').onmouseleave = () =>{
-      document.querySelector('.front').style.transform = 'perspective(1000px) rotateY(0deg)';
-      document.querySelector('.back').style.transform = 'perspective(1000px) rotateY(180deg)';
-  }
-  
-  document.querySelector('.cvv-input').oninput = () =>{
-      document.querySelector('.cvv-box').innerText = document.querySelector('.cvv-input').value;
-  }
-  
-  </script>
+    </div>
+</div>	
+	
+</body>
+</html>
+
 
    <!-- Footer Section Begin -->
    <footer class="footer-section">
@@ -456,6 +451,8 @@
                         </ul>
                     </div>
                 </div>
+                <div class="col-lg-3 offset-lg-1">
+                </div>
             </div>
         </div>
     </div>
@@ -472,7 +469,7 @@
                 </div>
                 <div class="col-lg-5">
                     <div class="co-text"><p>
-Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | <i class="fa fa-heart" aria-hidden="true"></i><a href="" target="_blank">INFI</a>
+Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved |<i class="fa fa-heart" aria-hidden="true"></i><a href="" target="_blank">INFI</a>
 </p></div>
                 </div>
             </div>
