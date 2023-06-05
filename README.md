@@ -1,4 +1,4 @@
 # Ceylon Voyager's Retreat
 
-https://github.com/IroshanBrian/CVR/assets/82568657/1b9f1487-7ec1-4bf4-897f-c1758ddbb690
+https://media.discordapp.net/attachments/1110162211239895152/1115327478290984990/LOGO.jpg?width=718&height=676
 
