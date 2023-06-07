@@ -1993,9 +1993,6 @@ ul, ol {
 	.logo{
 	max-width: 70%;
 }
-	.menu-item.logo{
-
-	} 
 }
 
 @media only screen and (min-width: 882px) and (max-width: 1440px){
