@@ -142,33 +142,90 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Montserrat', sans-serif;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
-body{
-  background: #ffffff;
-  padding: 0 10px;
+.image{
+  background:#ffffff;
 }
+
 .wrapper{
   max-width: 500px;
   width: 100%;
-  background: #ffffff;
-  margin: 20px auto;
+  margin: 10px auto;
   box-shadow: 1px 1px 2px rgba(0,0,0,0.125);
   padding: 30px;
   border: 2px solid black;
   padding: 6px 40px 50px;
   border-radius: 37px;
+  margin-bottom: 100px;
+  margin-top: 100px;
 }
 
 .wrapper .title{
-  font-size: 24px;
+  font-size: 32px;
   font-weight: 700;
   margin-bottom: 25px;
   color: #000000;
   text-transform: uppercase;
   text-align: center;
+  font-family: "gabriola";
+
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  position: relative;
 }
 
+.container .label {
+  font-size: 15px;
+  padding-left: 10px;
+  position: absolute;
+  top: 13px;
+  transition: 0.3s;
+  pointer-events: none;
+}
+
+.input {
+  width: 200px;
+  height: 45px;
+  border: none;
+  outline: none;
+  padding: 0px 7px;
+  border-radius: 6px;
+  color: #000000;
+  text-align: center;
+  font-size: 15px;
+  background-color: transparent;
+  box-shadow: 3px 3px 10px rgba(0,0,0,1),
+  -1px -1px 6px rgba(255, 255, 255, 0.4);
+}
+
+.input:focus {
+  border: 2px solid transparent;
+  text-align: center;
+  color: #000000;
+  box-shadow: 3px 3px 10px rgba(0,0,0,1),
+  -1px -1px 6px rgba(255, 255, 255, 0.4),
+  inset 3px 3px 10px rgba(0,0,0,1),
+  inset -1px -1px 6px rgba(255, 255, 255, 0.4);
+}
+
+.container .input:valid ~ .label,
+.container .input:focus ~ .label {
+  transition: 0.3s;
+  padding-left: 2px;
+  transform: translateY(-35px);
+}
+
+.container .input:valid,
+.container .input:focus {
+  box-shadow: 3px 3px 10px rgba(0,0,0,1),
+  -1px -1px 6px rgba(0, 0, 0, 0.4),
+  inset 3px 3px 10px rgba(0,0,0,1),
+  inset -1px -1px 6px rgba(255, 255, 255, 0.4);
+}
 .wrapper .form{
   width: 100%;
 }
@@ -181,7 +238,7 @@ body{
 
 .wrapper .form .inputfield label{
    width: 200px;
-   color: #757575;
+   color: #000000;
    margin-right: 10px;
   font-size: 14px;
 }
@@ -242,7 +299,7 @@ body{
 
 .wrapper .form .inputfield p{
    font-size: 14px;
-   color: #757575;
+   color: #ff0000;
 }
 .wrapper .form .inputfield .check{
   width: 15px;
@@ -310,6 +367,7 @@ body{
     text-align: center;
 }
 
+
 @media (max-width:420px) {
   .wrapper .form .inputfield{
     flex-direction: column;
@@ -317,6 +375,8 @@ body{
   }
   .wrapper .form .inputfield label{
     margin-bottom: 5px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-decoration: #000000;
   }
   .wrapper .form .inputfield.terms{
     flex-direction: row;
@@ -332,11 +392,11 @@ body{
 	<meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
-<body>
-<div class="wrapper">
+<body class="image">
 
-    <div class="title">
-        BOOKINGS
+<div class="wrapper">
+  <div class="title"><i>
+        BOOKINGS</i>
     </div>
     <div class="form">
        <div class="inputfield">
@@ -356,19 +416,18 @@ body{
           <input type="email" class="input"required>
        </div> 
         <div class="inputfield">
-          <label>Rooms</label>
+          <label>Packages</label>
           <div class="custom_select">
             <select>
               <option value="">Select</option>
-              <option value="">Room 1 (2 Adults)</option>
-              <option value="">Room 2 (2 Adults)</option>
-              <option value="">Room 3 (2 Adults)</option>
-              <option value="">Room 4 (2 Adults)</option>
-              <option value="">Room 5 (2 Adults)</option>
+              <option value="">Premium</option>
+              <option value="">Mid</option>
+              <option value="">Basic</option>
+              <option value="">Starter</option>
             </select>
           </div>
         </div>
-        <div class="inputfield">
+        <!--<div class="inputfield">
             <label>Custom Package</label>
             <div class="custom_select">
               <select>
@@ -380,7 +439,7 @@ body{
                 <option value="">Package 5</option>
               </select>
             </div>
-          </div>
+          </div>-->
           <div class="inputfield">
             <label>Check In</label>
             <input type="date">
@@ -435,7 +494,7 @@ body{
                                 <img src="img/footer-logo.png" alt="">
                             </a>
                         </div>
-                        <p>We inspire and reach millions of travelers<br /> across 90 local websites</p>
+                        <p></p>
                         <div class="fa-social">
                             <a href="https://www.facebook.com/profile.php?id=100093367804749"><i class="fa fa-facebook"></i></a>
                             <a href="https://www.instagram.com/ceylonvoyagersretreat/"><i class="fa fa-instagram"></i></a>
@@ -470,7 +529,7 @@ body{
                 </div>
                 <div class="col-lg-5">
                     <div class="co-text"><p>
-Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved |<i class="fa fa-heart" aria-hidden="true"></i><a href="" target="_blank">INFI</a>
+Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | <i class="fa fa-heart" aria-hidden="true"></i><a href="" target="_blank">INFI</a>
 </p></div>
                 </div>
             </div>
